@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa de Revista - João Paulo</title>
+    <style>
+        /* Reset de margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Capa da Revista */
+        .capa {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(./file.enc) center/cover no-repeat; /* Substitua com a URL da imagem de fundo */
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Sobreposição escura sobre a imagem */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Contêiner que centraliza o texto */
+        .texto-centralizado {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Limitar a largura do texto */
+            text-align: center;
+            z-index: 10;
+        }
+
+        /* Título principal */
+        .titulo-principal {
+            font-size: 70px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /* Subtítulo abaixo do nome */
+        .subtitulo {
+            font-size: 28px;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+
+        /* Descrição */
+        .descricao {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Destaque importante sobre João Paulo */
+        .destaque-importante {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
+            background: rgba(255, 30, 0, 0.7); /* Fundo vermelho para destacar */
+            padding: 15px;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            z-index: 10;
+            margin-top: 20px; /* Espaço extra */
+        }
+
+        /* Barra lateral esquerda para outros títulos */
+        .barra-lateral {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 20%;
+            height: 80%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .barra-lateral h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .barra-lateral ul {
+            list-style: none;
+        }
+
+        .barra-lateral li {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .barra-lateral li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .barra-lateral li a:hover {
+            color: #ff1e00;
+        }
+
+        /* Banner de "Novidade" no canto superior direito */
+        .banner {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background-color: #ff1e00;
+            padding: 15px 25px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        /* Rodapé da capa */
+        .rodape {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 10;
+        }
+
+        /* Logo no canto superior esquerdo */
+        .logo {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff1e00;
+            z-index: 15;
+        }
+
+        /* Linha horizontal abaixo do título */
+        .linha {
+            position: absolute;
+            top: 26%;
+            left: 5%;
+            width: 40%;
+            height: 2px;
+            background-color: #ff1e00;
+            z-index: 10;
+        }
+
+        /* Dicas adicionais de estilo */
+        .destaque {
+            background-color: #ff1e00;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 15px;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="capa">
+        <!-- Overlay escuro sobre a imagem -->
+        <div class="overlay"></div>
+
+        <!-- Logo da revista -->
+        <div class="logo">G Magazine</div>
+
+        <!-- Contêiner centralizado de texto -->
+        <div class="texto-centralizado">
+            <!-- Título Principal: João Paulo -->
+            <div class="titulo-principal">João Paulo</div>
+
+            <!-- Subtítulo -->
+            <div class="subtitulo">A vida de um ícone</div>
+
+            <!-- Descrição/Resumo sobre João Paulo -->
+            <div class="descricao">
+                <p>Entrevista exclusiva com João Paulo! O famoso artista revela tudo sobre sua carreira, os desafios que enfrentou e o que o futuro reserva para ele. Não perca!</p>
+            </div>
+        </div>
+
+        <!-- Destaque Importante sobre João Paulo -->
+        <div class="destaque-importante">
+            João Paulo é o MAIOR criador de conteúdo gay do Brasil!
+        </div>
+
+        <!-- Barra lateral esquerda com mais títulos -->
+        <div class="barra-lateral">
+            <h3>Outras matérias</h3>
+            <ul>
+                <li><a href="#">Cultura Pop: A revolução digital</a></li>
+                <li><a href="#">Moda de Verão 2024</a></li>
+                <li><a href="#">Fitness: Como ter o corpo dos sonhos</a></li>
+                <li><a href="#">Viagem dos Sonhos: Caribe</a></li>
+                <li><a href="#">Os segredos da culinária de alta gastronomia</a></li>
+            </ul>
+        </div>
+
+        <!-- Banner de novidade -->
+        <div class="banner">Novidade!</div>
+
+        <!-- Rodapé com informação de edição -->
+        <div class="rodape">Edição Especial - G Magazine - 2024</div>
+
+        <!-- Destaque adicional -->
+        <div class="destaque" style="position: absolute; bottom: 15%; right: 10%;">Exclusivo</div>
+    </div>
+</body>
+</html>
